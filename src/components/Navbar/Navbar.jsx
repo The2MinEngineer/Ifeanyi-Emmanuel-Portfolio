@@ -41,6 +41,25 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/ifeanyi-emmanuel/">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/The2MinEngineer">Twitter</a>
+              </li>
+              <li>
+                <a href="https://medium.com/@The2MinEngineer">Medium</a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1HY329XidR9qTLVPX5PqOXkBjnh96Fydi/view?usp=drive_link">
+                  Download Resume
+                </a>
+              </li>
+            </ul>
           </motion.div>
         )}
       </div>
