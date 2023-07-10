@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { HiX } from 'react-icons/hi';
+import { CgMenuRight } from 'react-icons/cg';
 import { motion } from 'framer-motion';
 
 import { images } from '../../constants';
@@ -23,7 +24,7 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <CgMenuRight onClick={() => setToggle(true)} />
 
         {toggle && (
           <motion.div
