@@ -1,10 +1,24 @@
 import React, { useState } from 'react';
-import { HiX } from 'react-icons/hi';
-import { CgMenuRight } from 'react-icons/cg';
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
 import { images } from '../../constants';
 import './Navbar.scss';
+
+const getLinkForItem = (item) => {
+  switch (item) {
+    case 'LinkedIn':
+      return 'https://www.linkedin.com/in/ifeanyi-emmanuel/';
+    case 'Twitter':
+      return 'https://twitter.com/The2MinEngineer';
+    case 'Medium':
+      return 'https://medium.com/@The2MinEngineer';
+    case 'Download Resume':
+      return 'https://drive.google.com/file/d/1HY329XidR9qTLVPX5PqOXkBjnh96Fydi/view?usp=drive_link';
+    default:
+      return '#';
+  }
+};
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,7 +38,7 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-menu">
-        <CgMenuRight onClick={() => setToggle(true)} />
+        <HiMenuAlt4 onClick={() => setToggle(true)} />
 
         {toggle && (
           <motion.div
@@ -40,6 +54,15 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+            </ul>
+            <ul>
+              {['LinkedIn', 'Twitter', 'Medium', 'Download Resume'].map(
+                (item, index) => (
+                  <li key={index}>
+                    <a href={getLinkForItem(item)}>{item}</a>
+                  </li>
+                ),
+              )}
             </ul>
           </motion.div>
         )}
