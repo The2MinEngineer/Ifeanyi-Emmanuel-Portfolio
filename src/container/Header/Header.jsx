@@ -36,6 +36,39 @@ const Header = () => {
           <div className="tag-cmp app__flex">
             <p className="p-text">Software Engineer</p>
           </div>
+
+          <div className="tag-cmp app__flex">
+            <a
+              href="https://www.linkedin.com/in/ifeanyi-emmanuel/"
+              className="p-text app__flex-cursor"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://twitter.com/The2MinEngineer"
+              className="p-text app__flex-cursor"
+            >
+              Twitter
+            </a>
+            <a
+              href="https://medium.com/@The2MinEngineer"
+              className="p-text app__flex-cursor"
+            >
+              Medium
+            </a>
+            <a
+              href="https://github.com/The2MinEngineer"
+              className="p-text app__flex-cursor"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1HY329XidR9qTLVPX5PqOXkBjnh96Fydi/view?usp=drive_link"
+              className="p-text app__flex-cursor"
+            >
+              DOWNLOAD RESUME
+            </a>
+          </div>
         </div>
       </motion.div>
 
